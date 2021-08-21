@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images.jpg" id="image">
+    <div class="photo">
+        <div id="style" >Rotate :</div>
+            <select  id="contain">
+                <option selected>Normal</option>
+                <option value="rotate(-90deg)">Rotate -90</option>
+                <option value="rotate(90deg)">Rotate 90</option>
+                <option value="rotate(180deg)">Rotate 180</option>
+            </select>
+            <div id="style" >Resize :</div>
+            <select  id="contain1">
+                <option selected>Normal</option>
+                <option value="200px" >Small</option>
+                <option value="300px">Medium</option>
+                <option value="500px">Large</option>
+            </select>
+            <div id="style" >Adjust Brightness :</div>
+            <select  id="contain2">
+                <option value="Brightness(1)"selected>Normal</option>
+                <option value="Brightness(0.5)" >Light Brightness</option>
+                <option value="Brightness(2)">Brightness</option>
+                <option value="Brightness(2.5)">Double Brightness</option>
+            </select>
+            <div id="style" >Contrast :</div>
+            <select  id="contain3">
+                <option value="Contrast(1)"selected>Normal</option>
+                <option value="Contrast(50%)" >Light Contrast</option>
+                <option value="Contrast(200%)">Double Contrast</option>
+                <option value="Contrast(0)">No Contrast</option>
+            </select>
+            <div id="style" >Borders :</div>
+            <select  id="contain4">
+                <option value="2px solid black" selected>Italic</option>
+                <option value="3px solid black">Cursive</option>
+                <option value="5px solid black">Fantasy</option>
+            </select>
+    </div>
+    <button id="change" onclick="change()">Edit Photo</button>
+    <script src="photo.js"></script>
+</body>
+</html>
